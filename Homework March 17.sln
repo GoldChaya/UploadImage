@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework March 17.Web", "Homework March 17.Web\Homework March 17.Web.csproj", "{F29F2B74-CC20-4004-B960-3127A1EE264F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework March 17.Data", "Homework March 17.Data\Homework March 17.Data.csproj", "{9F8DA7BA-165D-4438-934A-F5C4D1E838AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F29F2B74-CC20-4004-B960-3127A1EE264F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F29F2B74-CC20-4004-B960-3127A1EE264F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F29F2B74-CC20-4004-B960-3127A1EE264F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F29F2B74-CC20-4004-B960-3127A1EE264F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F8DA7BA-165D-4438-934A-F5C4D1E838AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F8DA7BA-165D-4438-934A-F5C4D1E838AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F8DA7BA-165D-4438-934A-F5C4D1E838AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F8DA7BA-165D-4438-934A-F5C4D1E838AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3F010576-4503-4B1D-9BAD-6BBE5B1C9B68}
+	EndGlobalSection
+EndGlobal
