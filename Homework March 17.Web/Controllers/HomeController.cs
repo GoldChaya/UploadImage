@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using System.Text.Json;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace Homework_March_17.Web.Controllers
 {
@@ -55,7 +54,6 @@ namespace Homework_March_17.Web.Controllers
             if (!vm.CorrectCredentials)
             {
                 TempData["warning-message"] = "Incorrect credentials!";
-                vm.Message = (string)TempData["warning-message"];
             }
             else
             {
@@ -67,7 +65,7 @@ namespace Homework_March_17.Web.Controllers
                 allowedIds.Add(id);
                 HttpContext.Session.Set("allowedids", allowedIds);
             }
-            return View(vm);
+            return Redirect($"/home/viewimage?id={id}");
         }
         public IActionResult ViewImage(int id)
 
@@ -76,9 +74,9 @@ namespace Homework_March_17.Web.Controllers
             ViewImageViewModel vm = new();
             vm.image = repository.GetImageForId(id);
 
-            if (TempData["message"] != null)
+            if (TempData["warning-message"] != null)
             {
-                vm.Message = (string)TempData["message"];
+                vm.Message = (string)TempData["warning-message"];
             }
 
             if (!HasPermissionToView(id))
