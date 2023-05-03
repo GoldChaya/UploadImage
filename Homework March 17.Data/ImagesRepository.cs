@@ -44,7 +44,6 @@ namespace Homework_March_17.Data
             using var connection = new SqlConnection(_connectionString);
             using var command = connection.CreateCommand();
             command.CommandText = "SELECT * FROM Image WHERE Id = @id";
-            command.Parameters.Clear();
             command.Parameters.AddWithValue("@id", id);
             connection.Open();
             var reader = command.ExecuteReader();
@@ -67,7 +66,6 @@ namespace Homework_March_17.Data
             using var connection = new SqlConnection(_connectionString);
             using var cmd = connection.CreateCommand();
             cmd.CommandText = "UPDATE Image SET Views = Views + 1 WHERE Id = @id";
-            cmd.Parameters.Clear();
             cmd.Parameters.AddWithValue("@id", id);
             connection.Open();
             cmd.ExecuteNonQuery();
